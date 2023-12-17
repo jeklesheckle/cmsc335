@@ -1,0 +1,7 @@
+gonna use opendota API since they have a really generous free tier that doesn't require a key
+love em for that
+
+features:
+get match by id
+get list of matches by some other criteria
+select matches from list and save them to database

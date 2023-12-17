@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <title>New Matches</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+    </header>
+    <h1>New Matches</h1>
+    <hr>
+    <form action="/savematches" method="post">
+        <fieldset>
+            <p>
+                Enter match IDs to save. For multiple matches simply separate them with a space. It will take 
+                about one second to save each match to avoid rate limiting by OpenDota's API. 
+            </p>
+            <label for="to_save"></label><input id="to_save" name="match_list" type="text">
+            <button type="submit">Save</button>
+        </fieldset>
+    </form>
+    <%- matches_table %>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <title>New Matches</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+    </header>
+    <h1>Select Minimum Rank to Fetch Matches</h1>
+    <form action="/newmatches" method="post">
+        <!-- badge corresponds to rank int https://docs.opendota.com/#tag/public-matches/operation/get_public_matches -->
+        <select name="badge" id="badge">
+            <option value="Herald">Herald</option>
+            <option value="Guardian">Guardian</option>
+            <option value="Crusader">Crusader</option>
+            <option value="Archon">Archon</option>
+            <option value="Legend">Legend</option>
+            <option value="Ancient">Ancient</option>
+            <option value="Divine">Divine</option>
+            <option value="Immortal">Immortal</option>
+        </select>
+        <!-- ascending or descending -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

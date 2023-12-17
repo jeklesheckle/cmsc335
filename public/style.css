@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    padding: 8px;
+}
+
+.button {
+    max-width: fit-content;
+    background-color: brown;
+    margin: 8px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2 2 2 2;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    border: 2px solid grey;
+}
+
+.button:active {
+    background-color: red;
+}
+
+.nostyle {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 3px;
+}
+
+th {
+    background-color: lightslategrey;
+}
